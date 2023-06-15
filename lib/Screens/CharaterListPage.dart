@@ -144,35 +144,7 @@ class _CharacterListScreenState extends State<CharaterListPage> {
             }
             return false;
           },
-          child: _buildCharacterList()
-          // ListView.builder(
-          //   controller: _scrollController,
-          //   itemCount: characters.length + 1,
-          //   itemBuilder: (ctx, index) {
-          //     if (index < characters.length) {
-          //       final character = characters[index];
-          //       return ListTile(
-          //         leading: Image.network(character['image']),
-          //         title: Text(character['name']),
-          //         subtitle: Text(character['species']),
-          //         onTap: () {
-          //           Navigator.push(
-          //             context,
-          //             MaterialPageRoute(
-          //               builder: (ctx) =>
-          //                   CharacterDetailScreen(character: character),
-          //             ),
-          //           );
-          //         },
-          //       );
-          //     } else {
-          //       return ListTile(
-          //         title: Center(child: CircularProgressIndicator()),
-          //       );
-          //     }
-          //   },
-          // ),
-          ),
+          child: _buildCharacterList()),
     );
   }
 
